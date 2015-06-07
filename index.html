@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Twin Finch Roastery</title>
+	<link rel="stylesheet" type="text/css" href="styles/twin-finch-styles.css">
+    <!-- Include jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Add mousewheel plugin -->
+    <script type="text/javascript" src="scripts/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <!-- Add fancyBox for LightBox function-->
+	<link rel="stylesheet" href="scripts/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- Add fancyBox helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="scripts/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="scripts/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="scripts/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="scripts/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<script type="text/javascript">
+    	$(document).ready(function() {
+        	$('a.fancybox').fancybox();
+    	});
+	</script>
+</head>
+
+<body>
+	<!-- Navigation -->
+    <div class="sticky">	
+    	<div class="wrapper">
+    		<div class="grid">
+            	<div class="column-11-12">
+            		<nav>
+            			<label for="toggle-mobile-menu">&#9776; Menu</label>
+  						<input id="toggle-mobile-menu" type="checkbox"/>
+            			<ul>
+                			<li><a href="#about">About Us</a></li>
+                    		<li><a href="#product-list">Products</a></li>
+                    		<li><a href="#news">Happenings</a></li>
+                    		<li><a href="#contact-us">Contact</a></li>
+               			</ul>
+            		</nav>
+            	</div>
+            	<div class="column-1-12 logo-mobile hide-mobile">
+            		<img class="nav-logo" src="images/twin-finch-wordmark.png" alt="Twin Finch logo">
+            	</div>
+        	</div><!-- end grid -->
+    	</div><!-- end wrapper -->
+	</div><!-- end sticky -->
+            
+            <div class="hero-space">
+            	<img src="images/hero-space.jpg" alt="Coffee roaster">
+            </div>
+            
+        	<!-- Who We Are -->
+            <section id="about">
+            	<div class="wrapper">
+            		<div class="grid">
+        				<div class="column-12-12">
+            				<h2>Who We Are</h2>
+            			</div>
+                		<div class="column-4-12">
+                			<p class="justify">Twin Finch Roastery is an authentic micro-roastery; small, dedicated, and highly focused on quality. We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
+                		</div>
+                		<div class="column-4-12">
+                			<p class="justify">Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can't be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
+                		</div>
+                		<div class="column-4-12">
+                			<p class="justify">Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satisfaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
+               		 	</div>                	
+                    </div><!-- end grid -->
+                </div><!-- end wrapper -->
+                <div class="reviews">
+                	<div class="wrapper">
+                    	<div class="grid">
+               		 		<div class="column-12-12">
+                				<h3>What They Say About Us... </h3>
+                			</div>
+                			<div class="column-4-12 offset-1-12">
+                				<p>“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.” - <a href="http://www.coffeereview.com/">Coffee Review</a></p>
+                			</div>
+                			<div class="column-4-12 offset-2-12">
+                				<p>Finch House Blend was rated a 98 by <a href="http://www.coffeereview.com/">Coffee Review</a></p>
+                			</div>
+						</div><!-- end grid -->
+                    </div><!-- end wrapper -->
+                </div><!-- end reviews -->
+    		</section>
+    
+        	<!-- Our Products -->
+            <section id="products" class="clearfix">
+            	<div class="wrapper">
+                	<div class="grid">
+           				<div class="column-10-12">
+            				<h2 id="product-list">Our Products</h2>
+            			</div>
+            			<div class="column-2-12 logo-mobile">
+            				<img src="images/twin-finch-logo.png" alt="Twin Finch logo">
+            			</div>
+            			<!-- First row of products -->
+                		<div class="product-desktop">
+            				<div class="column-3-12">
+            					<img src="images/package-eveningoak.png" alt="">
+            				</div>
+            				<div class="column-9-12">
+            					<h3>Featured Seasonal Blend: Evening Oak</h3>
+            					<!-- nested columns -->
+            					<div class="grid">
+                					<div class="column-6-12">
+                    					<p>Our featured roast of the season. Pungently rich and complex with hints of night-blooming flowers and coriander in aroma and cup.</p>
+                    				</div>
+                				</div> <!-- end nested grid -->
+            				</div><!-- end column-9-12 -->
+            				<!-- row of clickable icons -->
+            				<div class="clearfix column-1-12 offset-1-12">
+            					<a class="fancybox icon" data-fancybox-type="iframe" href="evening-oak.html"><img src="images/icon-click.svg" alt="Click for more"></a>
+            				</div>
+            				<!-- second row of products -->
+            				<div class="column-3-12 clearfix">
+            					<img src="images/package-sunrise.png" alt="">
+            				</div>
+            				<div class="column-3-12">
+            					<img src="images/package-finchhouse.png" alt="">
+            				</div>
+            				<div class="column-3-12">
+            					<img src="images/package-midnight.png" alt="">
+            				</div>
+            				<div class="column-3-12">
+            					<img src="images/package-espresso.png" alt="">
+            				</div>
+            				<!-- Row of clicable icons -->
+            				<div class="column-1-12 offset-1-12">
+            					<a class="fancybox icon" data-fancybox-type="iframe" href="sunrise.html"><img src="images/icon-click.svg" alt="Click for more"></a>
+            				</div> 
+            				<div class="column-1-12 offset-2-12">
+            					<a class="fancybox icon" data-fancybox-type="iframe" href="finch-house.html"><img src="images/icon-click.svg" alt="Click for more"></a>
+            				</div>
+            				<div class="column-1-12 offset-2-12">
+            					<a class="fancybox icon" data-fancybox-type="iframe" href="midnight.html"><img src="images/icon-click.svg" alt="Click for more"></a>
+            				</div>
+            				<div class="column-1-12 offset-2-12">
+            					<a class="fancybox icon" data-fancybox-type="iframe" href="espresso.html"><img src="images/icon-click.svg" alt="Click for more"></a>
+            				</div>
+                		</div><!-- end product-desktop -->
+                		<div class="product-mobile">
+                    		<div class="column-mobile">
+            					<img src="images/package-eveningoak.png" alt="">
+            				</div>
+            				<div class="column-mobile">
+            					<h3>Featured Seasonal Blend: Evening Oak</h3>
+                			</div>
+                			<!-- row of clickable icons -->
+            				<div class="clearfix column-mobile icon-mobile">
+            					<a class="fancybox" data-fancybox-type="iframe" href="evening-oak.html"><img src="images/icon-click.svg" alt="Click for more"></a>
+            				</div>
+            				<!-- second row of products -->
+            				<div class="column-mobile clearfix">
+            					<img src="images/package-sunrise.png" alt="">
+            				</div>
+            				<div class="column-mobile">
+            					<img src="images/package-finchhouse.png" alt="">
+            				</div>            	
+                			<!-- Row of clicable icons -->
+            				<div class="column-mobile icon-mobile">
+            					<a class="fancybox" data-fancybox-type="iframe" href="sunrise.html"><img src="images/icon-click.svg" alt="Click for more"></a>
+            				</div> 
+            				<div class="column-mobile icon-mobile">
+            					<a class="fancybox" data-fancybox-type="iframe" href="finch-house.html"><img src="images/icon-click.svg" alt="Click for more"></a>
+            				</div>
+                			<!-- third row of products -->
+            				<div class="column-mobile">
+            					<img src="images/package-midnight.png" alt="">
+            				</div>
+            				<div class="column-mobile">
+            					<img src="images/package-espresso.png" alt="">
+            				</div>
+	           				<div class="column-mobile icon-mobile">
+            					<a class="fancybox" data-fancybox-type="iframe" href="midnight.html"><img src="images/icon-click.svg" alt="Click for more"></a>
+            				</div>
+            				<div class="column-mobile icon-mobile">
+            					<a class="fancybox" data-fancybox-type="iframe" href="espresso.html"><img src="images/icon-click.svg" alt="Click for more"></a>
+            				</div>
+                		</div><!-- end product-mobile -->
+                	</div><!-- end grid -->
+                </div><!-- end wrapper -->
+		</section>
+        
+            <!-- How to Brew -->
+            <section id="how-to-brew" class="clearfix">
+            	<div class="image-text">
+                	<img src="images/texture-wood.jpg" alt="How to Brew background">
+                    <div class="overlay"> <!-- text to be overlayed on image -->
+                		<div class="wrapper">
+                    		<div class="grid">
+                                <div class="column-12-12">
+            						<h3> How to Brew &ldquo;The Perfect Cup&rdquo; of Coffee </h3>
+                    			</div>
+                				<div class="column-10-12 offset-1-12 hide-mobile">
+                					<p>The water to be used must be right or the coffee will be wrong. The infusion you drink is mostly water. The flavor of coffee can easily be contaminated by other intruding influences. The best rule of thumb is, if the water you are going to use doesn't taste right, don't use it. It should have no discernible taste, or "character", such as sharp or astringent qualities. Bad water makes bad coffee. As a rule, bottled spring water is your best bet. Municipal water is usually not good enough for high quality coffee, unless you are using a good filtration system. Water that has been "softened" should also be avoided. It does not extract as well as non-softened water. Distilled water should not be used, because all of the mineral content has been removed. The minerals in water are essential to the extraction process. It is very important to note that if you're using any type of container to store water in, it is very important to frequently, and thoroughly clean the container. The build up of bacteria in water being used to brew coffee will have a dramatically negative effect on the coffee. This is one of the most commonly overlooked sources of trouble when brewing coffee.</p>
+                				</div>
+                				<div class="column-4-12 offset-1-12 clearfix">
+                					<a class="fancybox button" data-fancybox-type="iframe" href="how-to-brew.html">Read More...</a>
+                				</div>
+                    		</div><!-- end grid -->
+                    	</div><!-- end wrapper -->
+                	</div><!-- end overlay -->
+                </div><!-- end image-text -->
+            </section><!-- end how to brew -->
+            
+            <!-- Newsfeed -->
+            <section id="news" class="clearfix">
+            	<div class="wrapper">
+                	<div class="grid">
+            			<div class="column-10-12">
+            				<h2> What We're Up To </h2>
+            			</div>
+            			<div class="column-2-12 logo-mobile">
+            				<img src="images/twin-finch-logo.png" alt="Twin Finch logo">
+            			</div>
+            			<div class="column-6-12">
+            				<!-- nested grid for instagram photos -->
+                			<div class="grid">
+                				<h3 class="column-12-12"> Instagram </h3>
+                				<div class="column-6-12">
+									<img src="images/instagram-coffeebeans.jpg" alt="Instagram Photo">
+                    			</div>
+            					<div class="column-6-12">
+                    				<img src="images/instagram-coffeecup.jpg" alt="Instagram Photo">
+                    			</div>
+                    			<div class="column-6-12 clearfix">
+                    				<img src="images/instagram-trees.jpg" alt="Instagram Photo">
+                    			</div>
+                    			<div class="column-6-12">
+                    				<img src="images/instagram-roaster.jpg" alt="Instagram Photo">
+                    			</div>
+                			</div><!-- end instagram nested grid -->
+            			</div><!-- end instagram div -->
+            			<div class="column-6-12">
+            				<div class="column-12-12">
+            					<h3> Latest Blog Posts </h3>
+                				<h4> Aliquip Habemus </h4>
+                				<p>Lorem ipsum dolor sit amet, aliquip habemus mei ex, nulla nostrud ne quo. Illud tractatos eos id, ex eros dolores vituperata vim. Mandamus adipiscing sadipscing sea an, dictas melius meliore ne vim, fugit congue per ad. His ad lorem corpora suavitate. Diam impedit veritus an sit. At sed audire eligendi erroribus.</p>
+                			</div>
+                			<div class="column-7-12">
+                				<a class="button" href="">Read More</a>
+                			</div>
+                			<div class="column-12-12">
+                				<h4> Aliquip Habemus </h4>
+                				<p>Lorem ipsum dolor sit amet, aliquip habemus mei ex, nulla nostrud ne quo. Illud tractatos eos id, ex eros dolores vituperata vim. Mandamus adipiscing sadipscing sea an, dictas melius meliore ne vim, fugit congue per ad. His ad lorem corpora suavitate. Diam impedit veritus an sit. At sed audire eligendi erroribus.</p>
+                			</div>
+                			<div class="column-7-12">
+                				<a class="button" href="">Read More</a>
+                			</div>
+            			</div><!-- end blog div -->
+            			<div class="column-2-12 clearfix">
+            				<h3>follow us!</h3>
+            			</div>
+            			<div class="column-1-12 social-mobile">
+            				<a class="icon" href=""><img src="images/icon-facebook.svg" alt="Facebook Icon"></a>
+            			</div>
+            			<div class="column-1-12 social-mobile">
+            				<a class="icon" href=""><img src="images/icon-twitter.svg" alt="Twitter Icon"></a>
+            			</div>
+            			<div class="column-1-12 social-mobile">
+            				<a class="icon" href=""><img src="images/icon-googleplus.svg" alt="Google Plus Icon"></a>
+            			</div>
+            			<div class="column-1-12 social-mobile">
+            				<a class="icon" href=""><img src="images/icon-instagram.svg" alt="Instagram Icon"></a>
+            			</div>
+            			<div class="column-6-12">
+            				<form class="search-wrapper">
+        						<input type="text" placeholder="Enter your email for updates!">
+        						<button type="submit">Subscribe</button>
+    						</form>
+            			</div>
+                	</div><!-- end grid -->
+                </div><!-- end wrapper -->
+            </section><!-- end newsfeed section --> 
+            
+            <!-- Contact -->
+            <section id="contact">
+            	<div class="wrapper">
+                	<div class="grid">
+            			<div class="column-12-12 clearfix">
+            				<h2 id="contact-us"> Contact Us </h2>
+            			</div>
+            			<div class="column-2-12 logo-mobile">
+            				<img src="images/twin-finch-logo.png" alt="Twin Finch logo">
+            			</div>   
+            			<div class="column-3-12">
+            				<p>You can buy from us directly at our Seattle storefront located at 457 NW Market Street.</p>
+                			<p>Contact us by email at info&#64;twinfinch.com</p>
+                			<p>Our phone number is 1800TWNFNCH</p>
+            			</div>
+            			<div class="column-7-12">
+            				<img src="images/location-map.png" alt="location map">
+            			</div>
+                	</div><!-- end grid -->
+                </div><!-- end wrapper -->
+            </section><!-- end Contact section -->
+        	
+    		<footer>
+    			<div class="wrapper">
+        			<div class="grid">
+            			<div class="column-2-12 offset-5-12 logo-mobile">
+                			<img class="hide-mobile" src="images/twin-finch-wordmark.png" alt="Twin Finch logo">
+            			</div>
+            			<div class="column-2-12 offset-3-12">
+            				<p><small>&copy; 2014</small></p>
+            				<p><small>Twin Finch Roastery</small></p>
+            			</div>
+        			</div><!-- end grid -->
+    			</div><!-- end wrapper -->
+			</footer>
+	</body>
+</html>

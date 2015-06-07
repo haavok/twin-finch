@@ -1,0 +1,556 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
+/*Keeps boxes within rows, even with padding*/
+*, *:before, *:after {
+	-webkit-box-sizing : border-box;
+	-moz-box-sizing    : border-box;
+	box-sizing         : border-box;
+}
+
+/*This is making the grid expand to contain the floated columns*/
+.grid:after { 	
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+/*Makes all input elements 100% width of their container */
+input {
+	width: 100%;	
+}
+
+/*Meant to contain the grid*/
+.wrapper {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+/*Make all images the size of the container*/
+img {
+	width : 100%;
+}
+
+/*Nav Styling*/
+nav > input,
+nav > label {
+  display: none;
+}
+ 
+nav > label {
+  width: 100%;
+  float: left;
+  padding: 10px;
+  padding-right: 0;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+nav {
+    display: block;
+    background: #292929;
+    min-height: 40px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+nav, nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    background: #C2C2C2;
+	color: #42362E;
+	max-height: 40px;
+	-webkit-transition: all .2s ease-in-out;
+  	-moz-transition: all .2s ease-in-out;
+  	-o-transition: all .2s ease-in-out;
+  	transition: all .2s ease-in-out;
+}
+
+nav ul {
+    padding:0;
+    margin: 0;
+}
+
+nav ul li {
+    float:left;
+    display:inline;
+    position:relative;
+}
+
+.nav-logo {
+	margin-top: 6px;
+	background-color: #292929;
+}
+
+.sticky {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	background-color: #292929;
+	height:40px;
+	width: 100%;
+}
+
+/* Add space at top for nav */
+.hero-space {
+	margin-top: 40px;
+}
+
+/*  Give About section top margin for navigation*/
+#about {
+	margin-top: 30px;	
+}
+
+/* Styles for review section */
+.reviews
+{
+	background-color: #755F52;
+	margin-bottom: 20px;
+}
+
+.reviews p
+{
+	color: #C2C2C2;
+}
+
+.reviews h3
+{
+	color: #292929;	
+}
+
+.reviews a{
+	color: #292929;
+	text-decoration: none;
+}
+
+.reviews a:hover{
+	color: #C2C2C2;	
+}
+
+/*This is floating all columns left, gives a 50px gutter and adds a border*/
+[class*='column-'] { 	
+  	float: left;
+  	padding-right: 20px;
+	margin-bottom: 20px;
+}
+
+/*This takes the gutter off of the last column*/
+[class*='column-']:last-of-type {
+  	padding-right: 0;
+}
+
+/*Gives nested grids padding on the left and right*/
+.grid .grid [class*='column-'] {	
+  	padding: 0 25px;
+}
+
+/*Gives nested grids negative margin for alignment and margin of the bottom*/
+.grid .grid {	
+  	margin : 0 -25px 25px;
+}
+
+/*Column Widths*/
+.column-1-12 {
+  	width: 8.33%;
+}
+
+.column-2-12 {
+  	width: 16.66%;
+}
+
+.column-3-12 {
+  	width: 25%;
+}
+
+.column-4-12 {
+  	width: 33.33%;
+}
+
+.column-5-12 {
+  	width: 41.66%;
+}
+
+.column-6-12 {
+  	width: 50%;
+}
+
+.column-7-12 {
+  	width: 58.33%;
+}
+
+.column-8-12 {
+  	width: 66.66%;
+}
+
+.column-9-12 {
+  	width: 75%;
+}
+
+.column-10-12 {
+  	width: 83.33%;
+}
+
+.column-11-12 {
+  	width: 91.66%;
+}
+
+.column-12-12 {
+  	width: 100%;
+}
+
+/*offset classes*/
+.offset-1-12 {
+	margin-left: 8.33%;	
+}
+
+.offset-2-12 {
+	margin-left: 16.66%;	
+}
+
+.offset-3-12 {
+	margin-left: 25%;
+}
+
+.offset-4-12 {
+	margin-left: 33.33%;	
+}
+
+.offset-5-12 {
+	margin-left: 41.66%;
+}
+
+.offset-6-12 {
+	margin-left: 50%;
+}
+
+.offset-7-12 {
+	margin-left: 58.33%;	
+}
+
+.offset-8-12 {
+	margin-left: 66.66%;	
+}
+
+.offset-9-12 {
+	margin-left: 75%;
+}
+
+.offset-10-12 {
+	margin-left: 83.33%;
+}
+
+.offset-11-12 {
+	margin-left: 91.66%;
+}
+
+.offset-12-12 {
+	margin-left: 100%;
+}
+
+/*helper classes*/
+.clearfix {
+	clear: both;	
+}
+
+.left {
+  float:left
+}
+
+.right {
+  float:right;
+}
+
+.centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.hide {
+	display: none;
+}
+
+/*Typography*/
+body {
+	font-family: 'Quattrocento Sans', sans-serif;
+	color: #292929;
+	font-size: 12pt;
+}
+
+h1,h2,h3,h4 {
+	font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+	font-size: 30pt;	
+	color: #42362E;
+}
+
+h3 {
+	font-size: 22pt;
+	color: #666666;
+}
+
+h4 {
+	font-size: 18pt;
+	color: #755F52;
+}
+
+.justify {
+	text-align: justify;	
+}
+
+.callout {
+	font-family: 'Oswald', sans-serif;
+	font-size: 	18pt;
+}
+
+/* Putting text over images */
+.image-text { 
+   position: relative; 
+   width: 100%;
+}
+
+.image-text .overlay { 
+   position: absolute; 
+   top: 10px; 
+   left: 20px; 
+   width: 100%;
+}
+
+.image-text img {
+	max-height: 500px;
+	opacity: .5;
+	margin-bottom: 20px;
+}
+
+/* Hide Mobile version of sections */
+.product-mobile, hide-mobile {
+	display: none;	
+}
+
+footer {
+	background-color: #42362E;
+	height: 100px;	
+	color: #C2C2C2;
+}
+
+footer img {
+	margin-top: 10px;	
+}
+
+/* Classes to create buttons from links */
+a.button {
+	background-color: #42362E;
+  	padding: 15px 30px;
+  	text-decoration:none;
+  	font-size:22px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	color: #C2C2C2;
+}
+
+a.button:hover {
+  background-color: #775F52;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+} 
+ 
+a.icon:hover { 
+  opacity:.5;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}   
+
+/* Form wrapper styling */
+.search-wrapper {
+box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
+}
+ 
+/* Form text input */
+.search-wrapper input {
+	padding: 10px 5px;
+	float: left;
+	width: 75%;
+	height: 40px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	border: 0;
+	background: #C2C2C2;
+	border-radius: 3px 0 0 3px;
+}
+ 
+.search-wrapper input:focus {
+    outline: 0;
+    background: #C2C2C2;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+ 
+.search-wrapper input::-webkit-input-placeholder {
+   color: #42362E;
+   font-weight: normal;
+   font-style: italic;
+}
+ 
+.search-wrapper input:-moz-placeholder {
+    color: #42362E;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+.search-wrapper input:-ms-input-placeholder {
+    color: #42362E;
+    font-weight: normal;
+    font-style: italic;
+}    
+ 
+/* Form submit button */
+.search-wrapper button {
+	overflow: visible;
+	position: relative;
+	float: right;
+	border: 0;
+	padding: 5px;
+	cursor: pointer;
+	width: 25%;
+	height: 40px;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	text-transform: uppercase;
+	background: #42362E;
+	border-radius: 0 3px 3px 0;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+   
+.search-wrapper button:hover{     
+    background: #755F52;
+	-webkit-transition: all .2s ease-in-out;
+  	-moz-transition: all .2s ease-in-out;
+  	-o-transition: all .2s ease-in-out;
+  	transition: all .2s ease-in-out;
+}   
+   
+.search-wrapper button:active,
+.search-wrapper button:focus{   
+    background: #C2C2C2;
+    outline: 0;   
+}
+ 
+.search-wrapper button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-width: 8px 8px 8px 0;
+    border-style: solid solid solid none;
+    border-color: transparent #42362E transparent;
+    top: 12px;
+    left: -6px;
+}
+ 
+.search-wrapper button:hover:before{
+    border-right-color: #755F52;
+}
+ 
+.search-wrapper button:focus:before,
+.search-wrapper button:active:before{
+	border-right-color: #755F52;
+} 
+
+/* remove extra button spacing for Mozilla Firefox */
+.search-wrapper button::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
+}    
+
+
+
+/*Media query for mobile*/
+@media only screen and (max-width: 700px) {
+	/*Make columns stack instead*/
+	[class*='column-'] {
+    	width: 100%;
+	}
+	
+	/*Creates new columns for mobile*/
+	.column-mobile {
+		width: 50%;
+	}
+	
+	.social-mobile {
+		width: 25%;
+	}
+	
+	.icon-mobile {
+		width: 25%;
+		margin: 0 12.5%;
+	}
+	
+	
+	/*Clears the margin of any offset columns for mobile*/
+	[class*='offset-'] {
+    	margin-left: 0;
+	}
+	
+	/*Make the logos smaller and centered instead of 100%*/
+	.logo-mobile {
+		width: 50%;
+		margin-left: 25%;
+	}
+	
+	/*Navigation*/
+	nav > label {
+        display: block;
+    }
+	
+    nav > ul {
+        display: none;
+        clear: both;
+    }
+	
+    nav > input:checked + ul {
+        display: block;
+		width: 100%;
+    }
+	
+    nav ul li {
+        float: none;
+        display: block;
+        border-right: none;
+        padding-left: 10px;
+    }
+	
+	/*Hide things in mobile version*/
+	.hide-mobile {
+		display: none;	
+	}
+	
+	/* Hide desktop sections and show mobile sections */
+	.product-mobile {
+		display: block;
+	}
+	
+	.product-desktop {
+		display: none;
+	}
+	
+	footer {
+		text-align: center;
+	}
+	
+}
+
